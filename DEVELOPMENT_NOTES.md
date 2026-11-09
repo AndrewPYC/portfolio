@@ -1,5 +1,35 @@
 # Factual development notes
 
+November 9, 2026 — final push authorization:
+
+- Andrew explicitly requested “push to git” after the GitHub button was moved beside Clicker Co, authorizing the final commit and push. Pre-push source checks passed for five HTML pages, 94 local references, JS syntax, CSS brace balance, final button placement, retained destinations, and removed map/download content. Latest rendered layout, native keyboard/mobile interaction, and live acceptance remain unverified.
+
+November 9, 2026 — GitHub button placement:
+
+- Andrew requested the GitHub button replace “Save the QR code.” Moved it from the hero into the Clicker Co actions, removed the QR-download link and unused hero wrapper styles, and made the hero grid one column to avoid an empty slot. Kept the scannable QR image, game link, project-image viewer, and LinkedIn contact.
+- Source checks confirmed one exact GitHub profile link in Software, no hero duplicate/download link, and retained QR/game/LinkedIn content. Browser activation/layout checks remain unrun. No commit or push.
+
+November 9, 2026 — GitHub button replaces the map:
+
+- Andrew requested a simple GitHub button instead of the hero map. Replaced the full map with “Visit my GitHub,” linking to `https://github.com/AndrewPYC`; the username matches the verified repository remote. Removed the unused map renderer and loader, preserving the project-image viewer, theme/motion settings, chapter navigation, and LinkedIn contact.
+- Source checks passed for five HTML pages and 95 local references, exact GitHub destination, scene/controller removal, JS syntax, CSS braces, unique IDs, and retained LinkedIn/game links. Visual/native activation review of this latest change remains unrun. Changes remain local, uncommitted, and unpushed.
+
+November 9, 2026 — content-focused revision after feedback:
+
+- Andrew clarified that interactive art should relate directly to the website rather than appear as separate demos. Removed the code and skills sculptures and their controls, plus the hero’s explode/wireframe/rotation controls and supporting code/CSS.
+- Converted the hero into a 3D map with six real chapter links. Each node corresponds to My story, Experience, Crutch holder, Clicker Co, Skills, or Contact; hover/focus highlights the geometry and scroll position marks the current chapter. Ordinary HTML anchors remain usable without JavaScript/WebGL. Link positions are clamped to fit narrow viewports and stop moving during hover/focus. The existing actual-photo inspection tools remain.
+- Source checks passed for five HTML pages, 101 local references, exactly one scene and six valid map links, retained contact/game URLs, JS syntax and CSS braces. A scene test using actual Three.js geometry with a simulated renderer passed for finite transforms, projected label containment at 248/390/600px, chapter focus/active state, paused feedback, and offscreen suspension. Real rendered and native-input review is recorded separately in TESTING.md. Changes remain uncommitted and unpushed.
+- Follow-up checks confirmed the links stay stationary through 20 animation frames while focused. Refreshed the existing local Chrome tab and captured the revised WebGL map with all six chapter labels at approximately 1048px window width. Native activation, full keyboard/mobile/theme review remain pending. Left the local preview available for review; no commit or push.
+
+November 9, 2026 — interactive 3D preview:
+
+- Andrew requested more interactivity and 3D visuals, with a preview and explicit approval before pushing. Started from a clean working tree; this iteration remains uncommitted and unpushed.
+- Added assembled/exploded, wireframe, rotation slider, horizontal drag, and reset controls to the orbital workshop. Added procedural code and connected-toolkit scenes using the same lazy-loaded Three.js library and common scene controller. The new graphics are conceptual; no game screenshot, actual project geometry, or skills score is claimed.
+- Added four direct project-image selectors, persistent manual selection, a Follow scroll control, and a native image-inspection dialog with keyboard arrows, previous/next, Escape, and close controls. The phone model stage is static to keep the expanded controls from covering the narrative. Corrected the contact overview to describe LinkedIn rather than the removed repository link.
+- Source checks passed for all five HTML pages, 95 local file/fragment references, main JS syntax, unique IDs, one h1 per page, CSS brace balance, and the approved contact/game URLs. Simulated model checks passed for manual/follow behavior, image/alt synchronization, dialog state, and arrow wrapping. Scene checks used actual Three.js geometry with a simulated renderer and passed for finite transforms, direct controls while paused, quality downgrade, and hidden/offscreen suspension. These checks do not verify real GPU rendering.
+- Started a loopback-only HTTP preview at http://127.0.0.1:4173/; page, CSS, JS, vendor, and /portfolio/ path returned 200, while /.git/config returned 403. Browser review results are recorded in TESTING.md.
+- Opened the updated local site in Andrew’s Chrome portfolio window. A screenshot confirmed the orbital WebGL rendering at approximately 1048px window width; a subsequent screenshot showed the full project stage and controls at approximately 1707px. The window received user input during inspection, so further automation was left to Andrew’s review. Secondary-scene rendering, native interaction, mobile, full keyboard, and Lighthouse checks remain pending. The loopback preview is retained for this approval handoff.
+
 November 5, 2026 — 3D redesign and commit preparation:
 
 - Added a locally vendored Three.js r160 classic build and MIT license to preserve direct local-file opening. Implemented the decorative orbital sculpture with PBR materials, procedural studio reflections, emissive inlays, particles, shadows on higher quality settings, and pointer-responsive lighting/camera movement. Added the navy/violet/cyan theme, light palette, glass panels, and card depth.

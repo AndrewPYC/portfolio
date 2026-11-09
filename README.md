@@ -1,6 +1,16 @@
 # Andrew Soliman’s portfolio
 
-A detailed, single-page scrollytelling portfolio built with plain HTML, CSS, and JavaScript. The November 5, 2026 redesign adds a navy, violet, and cyan interface and an interactive Three.js orbital sculpture, with orange signature accents, a light theme, and the original narrative and project links.
+A detailed, single-page scrollytelling portfolio built with plain HTML, CSS, and JavaScript. The interface uses navy, violet, and cyan, with orange signature accents, a light theme, the original narrative and project links, and an interactive viewer for the supplied model images. The Clicker Co section links directly to Andrew’s GitHub profile.
+
+## Interactive preview — November 9, 2026
+
+Andrew approved this version for commit and push with his November 9 request:
+
+- Andrew requested a **Visit my GitHub** button linking to [AndrewPYC](https://github.com/AndrewPYC) beside **Clicker Co**, replacing **Save the QR code**. The scannable QR image remains. The hero map, its rendering code, and the earlier standalone art demos are removed.
+- Four project-view buttons select the real crutch-holder images. Manual selection persists until **Follow scroll** is selected. **Inspect full size** opens an image dialog with previous/next buttons and Left/Right arrow navigation; Escape closes the native dialog. Original image links remain in the narrative without JavaScript.
+- The main page no longer loads Three.js or creates a WebGL scene. Both themes, saved preferences, chapter navigation, image inspection, game/QR links, and LinkedIn contact remain.
+
+Final source checks passed for five HTML pages, 94 local references, JavaScript syntax, CSS brace balance, and the final GitHub/QR/LinkedIn configuration. Earlier simulated image-controller checks are recorded in `TESTING.md`; rendered checks describe their tested versions. The latest button layout and full keyboard/mobile review remain unverified. No new dependencies were added.
 
 ## Compare three animation directions
 
@@ -18,9 +28,9 @@ Source and simulated interaction checks passed. Rendered browser, phone, keyboar
 
 Open `index.html` directly in a browser, or use VS Code Live Preview. No installation, server, build step, framework, or external font is required.
 
-The main portfolio extends Engineering Blueprint and Orbital Workshop with actual WebGL geometry: metallic orbital rings, emissive inlays, a faceted core, particles, procedural environment reflections, and pointer-responsive lighting and camera movement. The sculpture is decorative; the project images remain the supplied model photographs. Glass panels, gradient buttons, and subtle card tilt carry the visual design through the story.
+The main portfolio retains the glass panels, gradient buttons, blueprint details, and subtle card tilt from the visual redesign. Andrew requested replacing the orbital artwork with a direct GitHub button; the project images remain the supplied model photographs.
 
-The opening pairs the introduction with the orbital sculpture. An overview below links to My story, Experience, Projects, Skills, and Contact. The layout stacks on phones.
+The opening presents the introduction and an overview linking to My story, Experience, Projects, Skills, and Contact. The GitHub button sits beside Clicker Co in the software section.
 
 The story also includes original vector graphics: a tools illustration in Experience, a browser illustration above the software project, and a connected-skills diagram. The art follows both color themes; moving traces and a rotating click marker follow Pause motion and reduced-motion settings. The browser art is illustrative, not a game screenshot.
 
@@ -28,7 +38,7 @@ Use **Pause motion** in the header to stop the animation, or **Resume motion** t
 
 Current source checks passed for all five HTML pages and 94 local references, JavaScript syntax, CSS brace balance, and the LinkedIn contact update. Browser automation stopped because it could not verify the browser URL; rendered WebGL, phone/keyboard/touch review, Lighthouse, and live deployment remain unverified. Earlier simulated results in the test logs describe earlier implementations.
 
-Three.js loads from a local, pinned classic build when the scene approaches the viewport. This keeps direct `file:` opening compatible without a build step or runtime CDN. On small or lower-powered devices, the scene reduces resolution, particles, and shadows and targets 30 FPS; it also downgrades after sustained slow frames. Animation suspends offscreen, in hidden tabs, when paused, and with reduced motion. A static illustration remains available if JavaScript or WebGL is unavailable. A 60 FPS target on capable devices has not been measured.
+The former Three.js build and license remain archived in `js/vendor/`; the current main page does not load them. Direct `file:` opening still works without a build step or runtime CDN.
 
 The page follows this sequence:
 
@@ -36,7 +46,7 @@ The page follows this sequence:
 2. Background — first-generation college experience and current interests.
 3. Experience — trade work, security, lifeguarding, and wrestling.
 4. Crutch-holder design — four model views with an accompanying scrolling narrative.
-5. Software — the clicker game, a playable link, and a downloadable QR code.
+5. Software — the clicker game, a playable link, the GitHub button, and a scannable QR code.
 6. Skills — honest descriptions of trade, Python, AI-assisted coding, and design experience.
 7. Contact — a **Connect on LinkedIn** button linking to [Andrew’s profile](https://www.linkedin.com/in/andrew-soliman-477185449/). The public email and GitHub contact link were removed at Andrew’s request on November 5, 2026.
 
@@ -70,7 +80,7 @@ All chapter navigation uses anchors on this one page. The four old HTML pages ha
 - Intended live URL: [GitHub Pages portfolio](https://andrewpyc.github.io/portfolio/). Deployment and availability have not been verified in this task.
 - Intended Pages configuration: branch `main`, folder `/` (repository root).
 
-The user requested a local Git commit on November 5, 2026. No push or deployment was performed.
+The user authorized the latest commit and GitHub push on November 9, 2026. GitHub Pages deployment and final live acceptance are separate from the Git push and remain unverified for this version.
 
 ## Verification and remaining content
 
@@ -83,5 +93,5 @@ The detailed crutch-holder narrative distinguishes visible model details from po
 - Biography, experience, project information, and four crutch-holder model photos were supplied by Andrew in his Google Doc. The approved email was supplied in chat.
 - Each model photo was resized below 500 KB.
 - The QR image was generated using the QR Server API (`api.qrserver.com`) for the public [clicker game](https://andrewpyc.github.io/Clicker-game-/) URL. It is stored locally with no runtime service dependency.
-- Code and layout were prepared with Codex. The 3D scene uses [Three.js r160](https://github.com/mrdoob/three.js/tree/r160), distributed locally under the [MIT license](js/vendor/THREE-LICENSE.txt).
+- Code and layout were prepared with Codex. The earlier 3D scene used [Three.js r160](https://github.com/mrdoob/three.js/tree/r160), retained locally under the [MIT license](js/vendor/THREE-LICENSE.txt); the current main page does not load this library.
 - The tools, browser, and skills graphics were drawn as original inline SVG with Codex on November 3, 2026. They use the shared stylesheet and require no external assets, services, or libraries.

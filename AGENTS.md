@@ -20,6 +20,12 @@ Ask me for missing personal information, project details, images, and contact li
 
 ## Approved design
 
+Latest November 9 direction: remove the hero’s 3D chapter map and standalone art demos. Place a simple button to Andrew’s GitHub profile, `https://github.com/AndrewPYC`, beside Clicker Co, replacing “Save the QR code”; do not duplicate the GitHub button in the hero. Keep the scannable QR image, actual-image inspection tools, and LinkedIn contact button. This supersedes the earlier hero/map directions below. Andrew authorized committing and pushing this iteration with his subsequent November 9 “push to git” request.
+
+November 9, 2026 workflow request: improve interactivity and add more 3D visuals, then show a local preview. Wait for Andrew’s explicit approval of the finished preview before committing or pushing this iteration. Keep the approved content and controls. Added studies must remain clearly conceptual and use the existing locally vendored Three.js dependency.
+
+November 9 follow-up: interactive art must serve the website’s content, not appear as separate interactive demos. Use the hero’s 3D geometry for working chapter navigation and retain the viewer for the actual crutch-holder images. Remove standalone code/skills sculptures and their appearance/manipulation controls. This revision still awaits visual approval before a commit or push.
+
 Current direction approved November 5, 2026: a cinematic dark navy, violet, blue, and cyan design with actual Three.js rendering, reflective lighting, glass panels, and pointer interaction. Keep orange AS identity accents, the full story and original project images, light/dark mode, saved preferences, responsive navigation, pause/resume, and reduced-motion/no-JavaScript access. The hero pairs the introduction and orbital sculpture, with the overview below. This supersedes the earlier palette and compact orbital placement described below. A locally vendored Three.js r160 classic build is the sole approved runtime dependency, preserving double-click local opening without npm, frameworks, or a build step. Use adaptive graphics and static fallback artwork; do not claim measured frame rates or rendered accessibility results without testing them.
 
 Andrew approved the following updated direction on October 29, 2026:

@@ -1,5 +1,58 @@
 # Single-page portfolio checks
 
+## Final push preparation — November 9, 2026
+
+Andrew authorized committing and pushing the final GitHub-button placement. Earlier pending-approval statements below describe historical checkpoints.
+
+| ID | What is tested | Steps | Expected result | Actual result |
+| --- | --- | --- | --- | --- |
+| J04 | Final source before push | Parse main JS; check all HTML headings/IDs, local paths/fragments, CSS braces, one GitHub button beside Clicker Co, retained QR/game/LinkedIn, and removed map/download content. | Final requested configuration with valid local references. | Pass — 5 HTML pages and 94 local references; all assertions passed. Native browser/mobile/keyboard acceptance of the latest layout remains unrun. |
+
+## GitHub placement — November 9, 2026
+
+| ID | What is tested | Steps | Expected result | Actual result |
+| --- | --- | --- | --- | --- |
+| J03 | Replace QR download with GitHub | Inspect the software actions, count profile links, check the hero, QR image, game destination and LinkedIn link. | Exactly one GitHub button beside Clicker Co, no QR-download button or hero duplicate, existing QR image and other destinations retained. | Pass — executed PowerShell source checks. Supersedes earlier hero-placement expectations. Native activation/layout remains unrun. |
+
+## GitHub button replaces map — November 9, 2026
+
+Supersedes the map and art-scene requirements below. Earlier results remain historical.
+
+| ID | What is tested | Steps | Expected result | Actual result |
+| --- | --- | --- | --- | --- |
+| J01 | GitHub button and cleanup | Inspect the hero link, removal of map/canvas/renderer code, main JS syntax, CSS braces, page IDs/headings, local references, and approved contact/game links. | One native button-styled link opens https://github.com/AndrewPYC; existing features remain in source. | Pass — 5 HTML pages, 95 local references, exact GitHub URL, and all checked assertions. |
+| J02 | Visual and native link review | Refresh the local site in both themes at phone/laptop widths; Tab to “Visit my GitHub” and activate with Enter; repeat by clicking. | Readable button, visible focus, and Andrew’s GitHub profile opens. | Not run — rendered/native review remains pending. |
+
+## Content-focused revision — November 9, 2026
+
+This revision supersedes the separate art demos described in I05–I09 below. The image viewer/controller is unchanged. No commit or push is authorized until Andrew approves the revised preview.
+
+| ID | What is tested | Steps | Expected result | Actual result |
+| --- | --- | --- | --- | --- |
+| P01 | Content integration and source | Verify all HTML references, six map targets, scene count, removal of standalone demos/controls, JS syntax, CSS braces, and existing game/LinkedIn URLs. | One 3D scene serves real chapter navigation; all original content/links remain. | Pass — 5 HTML files, 101 local references, 6 chapter links, one scene; source assertions passed. |
+| P02 | Projected chapter links | Construct map using actual Three.js geometry and a simulated renderer; resize to 248/390/600px scene widths. | Finite coordinates; all six labels remain within their viewport. | Pass — simulated rendering/controller test. Actual GPU appearance not established. |
+| P03 | Navigation and motion | Simulate node focus/click, reading-position updates, pause and offscreen transitions; run 20 animated frames while a node has focus. | Focus moves to the correct chapter; current link updates; no animation loop while paused/offscreen; focused links stay stationary. | Pass — isolated simulated execution, including stationary projected labels. Native browser activation remains P04. |
+| P04 | Revised browser review | Refresh the local preview; inspect map in both themes and at phone/laptop widths; use all six links and keyboard focus, then inspect real project images. | Content-linked navigation is clear, usable, and responsive. | Partial — refreshed the local Chrome tab and captured the revised map at approximately 1048px window width. The WebGL assembly, six visible labeled chapter links, updated caption, and absence of demo controls were confirmed visually. Native link activation, full keyboard, mobile, and both-theme review remain pending. |
+
+## Interactive 3D iteration — November 9, 2026
+
+Local preview: http://127.0.0.1:4173/. This iteration awaits Andrew’s visual approval before committing or pushing. Older results below remain historical.
+
+| ID | What is tested | Steps | Expected result | Actual result |
+| --- | --- | --- | --- | --- |
+| I01 | Source integrity | Check all HTML files, local references and fragments, IDs, h1 count, main JS syntax, and CSS braces. | Valid references and parseable source. | Pass — 5 HTML pages, 95 local references; all checked assertions passed. |
+| I02 | Manual project views | Simulate selecting a view, then move the story to a different step. | Selected image remains until Follow scroll. | Pass — simulated controller execution. |
+| I03 | Follow scroll | After manual selection, activate Follow scroll. | Correct current step, image, caption, counter, pressed state, and alt restored. | Pass — simulated execution. |
+| I04 | Inspector state and image navigation | Open inspector, use next and left arrow across the first/last boundaries, then close. | Dialog state and body scroll class follow open/close; images/alt/captions wrap together. | Pass — simulated execution; native focus trapping and Escape remain I10. |
+| I05 | Three actual scene geometries | Construct orbit, digital, and network studies with actual Three.js geometry and a simulated renderer; run animation frames. | All scenes construct and transforms stay finite. | Pass — all three. Does not verify shaders or rendered appearance. |
+| I06 | Explicit 3D controls while paused | Simulate assembled/exploded, rotation, reset, wireframe, palette and network controls with motion stopped. | State and geometry update without a continuous animation loop. | Pass — simulated scene/controller execution. |
+| I07 | Adaptive rendering | Simulate sustained slow frames, hidden tab, and offscreen scene. | Economy settings activate; animation suspends when hidden/offscreen. | Pass — all three simulated scene controllers. Real FPS unmeasured. |
+| I08 | HTTP preview | Request /, stylesheet, JS, vendor file, /portfolio/, and /.git/config. | Assets return 200; repository internals denied. | Pass — expected 200 and 403 responses. |
+| I09 | Desktop WebGL appearance and controls | Open local preview, use assembly controls, rotate, switch digital palette and toolkit nodes, and scroll the story. | Three visible 3D studies, clear controls, preserved narrative. | Partial — Chrome loaded http://127.0.0.1:4173/; screenshot confirmed the real rendered orbital scene at approximately 1048px window width and project stage/controls at approximately 1707px. Full native control and secondary-scene review remains pending: the window received user input, so automation left it available for Andrew’s review. |
+| I10 | Native keyboard and dialog | Tab through scene controls; use range arrows, project views, inspector, Left/Right, Escape, and return focus. | Visible focus, useful labels, native dialog containment and restored focus. | Not run — native browser review pending. |
+| I11 | Mobile/tablet and both themes | Review 320/390/768/1366 widths; test menu, vertical touch scroll, horizontal sculpture drag, theme toggle and persistence. | No overflow/overlap; scrolling and controls remain usable in both themes. | Not run — browser review pending. |
+| I12 | Motion, fallbacks, and existing features | Pause/resume, reduced motion, blocked storage, no JS, unavailable WebGL; test game, QR, LinkedIn, chapter links, four scroll views and progress; run Lighthouse. | Existing features remain; static artwork and original image links survive enhancement failure. | Not run — rendered/manual regression review pending. No Lighthouse score claimed. |
+
 ## Pre-commit checks — November 5, 2026
 
 | ID | What is tested | Steps | Expected result | Actual result |
